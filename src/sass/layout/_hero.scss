@@ -1,0 +1,46 @@
+.hero {
+  margin: 0 auto;
+  max-width: 1360px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url(../images/background-overlay/hero-section-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: grey;
+  padding-top: 279px;
+  padding-bottom: 284px;
+  text-align: center;
+
+  &-button-icon {
+    margin-right: 6px;
+  }
+
+  &-title {
+    margin-bottom: 25px;
+
+    color: var(--hero-color-text);
+
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 1.2;
+  }
+
+  &-description {
+    color: var(--hero-color-text);
+    margin-bottom: 29px;
+
+    font-size: 22px;
+    line-height: 1.68;
+  }
+
+  &-button {
+    @extend .button;
+
+    width: 165px;
+    background-color: var(--green-background);
+  }
+}

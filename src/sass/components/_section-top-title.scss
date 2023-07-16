@@ -1,0 +1,15 @@
+.section-top-title {
+  font-size: 20px;
+  line-height: 1.65;
+
+  &.light {
+    color: var(--secondary-color-text);
+    margin-bottom: 5px;
+  }
+
+  &.dark {
+    color: var(--primary-color-text);
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}

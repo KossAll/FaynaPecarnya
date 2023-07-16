@@ -1,0 +1,19 @@
+.blog {
+  & .container {
+    display: flex;
+    padding: 0;
+  }
+
+  &-content-wrapper {
+    padding: 112px 44px 113px 30px;
+    background: #0284d0;
+  }
+
+  &-btn {
+    @extend .button;
+
+    background-color: transparent;
+    border: 1px solid var(--secondary-color-text);
+    width: 196px;
+  }
+}

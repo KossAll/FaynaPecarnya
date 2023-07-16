@@ -1,0 +1,25 @@
+.business {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  &-item {
+    overflow: hidden;
+  }
+
+  .gallery-link {
+    display: block;
+    transition: transform 400ms linear;
+  }
+
+  .gallery-link:hover,
+  .gallery-link:focus {
+    transform: scale(1.1);
+  }
+}

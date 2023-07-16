@@ -1,0 +1,23 @@
+.slick {
+  background-color: #5e5e5e;
+  padding: 150px 0;
+}
+.slick-slide {
+  background-color: #fff;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.slick-title {
+  font-size: 44px;
+  color: teal;
+  text-align: center;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: teal;
+}
+
+.slick-dots li.slick-active button:before {
+  color: red;
+}

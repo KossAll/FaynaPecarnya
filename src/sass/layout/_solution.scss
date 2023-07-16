@@ -1,0 +1,19 @@
+.solution {
+  & .container {
+    display: flex;
+    padding: 0;
+  }
+
+  &-content-wrapper {
+    background-color: var(--logo-color);
+    padding: 84px 44px 84px 30px;
+  }
+
+  &-btn {
+    @extend .button;
+
+    width: 167px;
+    border: 1px solid var(--secondary-color-text);
+    background-color: transparent;
+  }
+}
