@@ -2,10 +2,10 @@
   "name": "FaynaPecarnya",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://alexandr-diachenko.github.io/fainaperepichka/",
+  "homepage": "https://kossall.github.io/FaynaPecarnya/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /fainaperepichka/"
+    "build": "parcel build src/*.html --public-url /FaynaPecarnya/"
   },
   "repository": {
     "type": "git",
