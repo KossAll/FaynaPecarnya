@@ -2,11 +2,24 @@
   padding-top: 49px;
   padding-bottom: 59px;
 
+  &-image {
+    height: 315px;
+  
+  }
+
   &-list {
     display: flex;
     list-style: none;
     column-gap: 22px;
+  
+
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    flex-direction: column;
+    gap: 22px;
+      
+    }
   }
+
   &-item {
     flex-basis: calc((100% - 44px) / 3);
   }

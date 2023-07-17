@@ -7,18 +7,36 @@
     padding: 78px 30px 82px 30px;
     background-color: var(--section-about-background);
     width: 50%;
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      width: 100%
+    }
   }
+
   &-title {
     font-weight: 300;
     font-size: 38px;
     line-height: 1.26;
     margin-bottom: 34px;
+  
+
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   &-item {
     font-size: 18px;
     line-height: 1.56;
     color: var(--phone-color-text);
+  }
+
+  &-img {
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      display: none;
+        
+      }
+    
   }
 
   &-btn {
