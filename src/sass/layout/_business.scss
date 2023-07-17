@@ -11,6 +11,11 @@
 
   &-item {
     overflow: hidden;
+  
+  }
+
+  &-image {
+    height: 214px;
   }
 
   .gallery-link {
@@ -18,6 +23,7 @@
     transition: transform 400ms linear;
   }
 
+ 
   .gallery-link:hover,
   .gallery-link:focus {
     transform: scale(1.1);

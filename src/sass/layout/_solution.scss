@@ -4,6 +4,13 @@
     padding: 0;
   }
 
+  &-img {
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+    display: none;
+      
+    }
+  }
+
   &-content-wrapper {
     background-color: var(--logo-color);
     padding: 84px 44px 84px 30px;
