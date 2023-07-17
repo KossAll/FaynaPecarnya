@@ -7,14 +7,17 @@
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url(../images/background-overlay/hero-section-background.jpg);
-  background-position: center;
+    url(../images/background-overlay/hero-section-background480.jpg);
+  background-position: center top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:auto;
   background-color: grey;
   padding-top: 279px;
   padding-bottom: 284px;
   text-align: center;
+
+  
+    
 
   &-button-icon {
     margin-right: 6px;
