@@ -7,13 +7,19 @@
   &-img {
       @media screen and (min-width: 320px) and (max-width: 768px) {
     display: none;
-      
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+      }
   }
 
   &-content-wrapper {
     background-color: var(--logo-color);
     padding: 20px 20px 20px 20px;
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+      padding: 15px 15px 15px 15px;
+      }
   }
 
   &-btn {
