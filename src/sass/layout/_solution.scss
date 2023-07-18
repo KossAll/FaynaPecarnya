@@ -5,7 +5,7 @@
   }
 
   &-img {
-    @media screen and (min-width: 320px) and (max-width: 768px) {
+      @media screen and (min-width: 320px) and (max-width: 768px) {
     display: none;
       
     }
@@ -13,7 +13,7 @@
 
   &-content-wrapper {
     background-color: var(--logo-color);
-    padding: 84px 44px 84px 30px;
+    padding: 20px 20px 20px 20px;
   }
 
   &-btn {
