@@ -52,11 +52,11 @@
   }
   
   .menu-toggle {
-	position: relative;
-    top: 50%;
+	position: absolute;
+    top: 7%;
 	z-index: 15;
-	margin-left: 90%;
-	min-height: 40px;
+	margin-left: 85%;
+    min-height: 40px;
 	min-width: 40px;
 	display: flex;
 	align-items: center;
