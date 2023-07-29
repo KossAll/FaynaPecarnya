@@ -37,6 +37,4 @@ const marcap = galleryCategory1.map(({ image, name, price, id }) =>
     </div>
     <button class="button-shop">Додати в корзину</button>
     </div>`).join('');
-    shopCcontainer.insertAdjacentHTML('beforeend',marcap)
-console.log(marcap)
-;
+shopCcontainer.insertAdjacentHTML('beforeend', marcap);

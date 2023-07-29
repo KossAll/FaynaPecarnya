@@ -1,12 +1,14 @@
 .gallery-shop {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--card-gap);
+gap: 10px;
   padding-top: 20px;
+  justify-content: space-between;
+
 
   @media screen and (min-width: $tablet) {
-    column-gap: 32px;
-    padding-top: 60px;
+    // column-gap: 32px;
+    // padding-top: 60px;
   }
   @media screen and (min-width: $desktop) {
     // column-gap: var(--card-gap);
@@ -25,19 +27,20 @@
   position: relative;
   display: block;
   margin: 0 auto;
+  flex-basis: calc((100% - 4px) / 3);
 
   // min-width: 280px;
   // min-height: 402px;
-  @media screen and (min-width: $tablet) {
+  // @media screen and (min-width: $tablet) {
     //     @include columns-media($tablet, 2);
     // width: 336px;
     // height: 455px;
-  }
-  @media screen and (min-width: $desktop) {
+  // }
+  // @media screen and (min-width: $desktop) {
     //     @include columns-media($tablet, 3);
-    flex-basis: calc((100% - 32px) / 3);
+    // flex-basis: calc((100% - 20px) / 3);
     // height: auto;
-  }
+  // }
 }
 
 .gallery-product-box {
@@ -58,7 +61,7 @@
 
 .gallery-product-img {
   display: block;
-  // width: 100%;
+  width: 340px;
   // height: 100%;
   border-radius: 5px;
   object-fit: cover;
@@ -75,7 +78,7 @@ margin: 0 auto;
   color: var(--primary-text-color);
   @media screen and (min-width: $tablet) {
     
-    width: 336px;
+    // width: 336px;
   }
   @media screen and (min-width: $desktop) {
   
@@ -118,8 +121,8 @@ margin: 0 auto;
   width: 280px;
   margin-bottom: 4px;
   @media screen and (min-width: $tablet) {
-    width: 336px;
-    margin-bottom: 16px;
+    // width: 336px;
+    // margin-bottom: 16px;
   }
   @media screen and (min-width: $desktop) {
     // width: 394px;
@@ -137,8 +140,8 @@ margin: 0 auto;
   background-color: var(--button-activ-color);
 
   @media screen and (min-width: $desktop) {
-    width: auto;
-    height: 20px;
+    // width: auto;
+    // height: 20px;
   }
 }
 
