@@ -19,3 +19,35 @@
       margin: 0 auto;
       display: block;
     }
+
+
+
+/* Add this CSS to your stylesheet */
+.sorting-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  
+}
+
+.sorting-buttons label {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color:var(--green-background);
+}
+
+.sorting-buttons label:hover {
+  background-color: var(--logo-color);
+}
+
+/* Style for the selected radio button */
+.sorting-buttons input:checked + label {
+  background-color: #ffa500; /* Use any color you like for the selected button */
+  color: white; /* Use any color you like for the text when the button is selected */
+}
+
