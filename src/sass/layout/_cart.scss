@@ -1,0 +1,35 @@
+/* Styles for the cart overlay */
+.cart_overlay {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+
+    button {
+        padding: 5px 10px;
+        margin: 5px 5px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        background-color: var(--green-background);
+        color: black;
+        
+
+    }
+    
+    button:hover {
+        background-color: var(--logo-color);
+    }
+}
+.cart_overlay h2 {
+    margin-top: 0;
+}
+
+.cart_overlay button {
+    margin-top: 10px;
+}

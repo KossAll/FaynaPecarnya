@@ -27,16 +27,16 @@
   display: flex;
   justify-content: center;
   gap: 10px;
+  
   position: sticky;
   top: 0;
   z-index: 1;
-  
 }
 
 .sorting-buttons label {
   padding: 5px 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 2px solid rgb(153, 241, 124);
+  border-radius: 10px;
   cursor: pointer;
   background-color:var(--green-background);
 }
