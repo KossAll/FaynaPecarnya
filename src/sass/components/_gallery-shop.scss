@@ -1,22 +1,15 @@
 .gallery-shop {
   display: flex;
   flex-wrap: wrap;
-gap: 10px;
+  gap: 10px;
   padding-top: 20px;
+
   justify-content: space-between;
 
-
-  @media screen and (min-width: $tablet) {
-    // column-gap: 32px;
-    // padding-top: 60px;
-  }
-  @media screen and (min-width: $desktop) {
-    // column-gap: var(--card-gap);
-  }
 }
 
 .gallery-shop {
-  padding-top: 0;
+  
 }
 
 
@@ -24,34 +17,22 @@ gap: 10px;
 
 
 .gallery-product {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  flex-basis: calc((100% - 4px) / 3);
+  // position: relative;
+  // display: block;
+  // margin: 0 auto;
+  // flex-basis: calc((100% - 4px) / 3);
 
-  // min-width: 280px;
-  // min-height: 402px;
-  // @media screen and (min-width: $tablet) {
-    //     @include columns-media($tablet, 2);
-    // width: 336px;
-    // height: 455px;
-  // }
-  // @media screen and (min-width: $desktop) {
-    //     @include columns-media($tablet, 3);
-    // flex-basis: calc((100% - 20px) / 3);
-    // height: auto;
-  // }
 }
 
 .gallery-product-box {
-  @media screen and (max-width: 765px) {
-    width: 100%;
-    max-width: 728px;
-  }
+  // @media screen and (max-width: 765px) {
+  //   width: 100%;
+  //   max-width: 728px;
+  // }
 
-  cursor: pointer;
-  transition: scale 250ms var(--button-activ-color),
-    filter 250ms var(--primary-text-color);
+  // cursor: pointer;
+  // transition: scale 250ms var(--button-activ-color),
+    // filter 250ms var(--primary-text-color);
 
   &:hover {
     scale: 1.05;
@@ -60,41 +41,41 @@ gap: 10px;
 }
 
 .gallery-product-img {
-  display: block;
-  width: 340px;
-  // height: 100%;
-  border-radius: 5px;
-  object-fit: cover;
-margin: 0 auto;
+//   display: block;
+//   width: 340px;
+//   // height: 100%;
+//   border-radius: 5px;
+//   object-fit: cover;
+// margin: 0 auto;
   
 }
 
 .gallery-poster-title {
-  display: block;
-  min-width: 280px;
-  margin-top: 12px;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--primary-text-color);
-  @media screen and (min-width: $tablet) {
+  // display: block;
+  // min-width: 280px;
+  // margin-top: 12px;
+  // text-transform: uppercase;
+  // text-align: center;
+  // color: var(--primary-text-color);
+  // @media screen and (min-width: $tablet) {
     
     // width: 336px;
-  }
-  @media screen and (min-width: $desktop) {
+  // }
+  // @media screen and (min-width: $desktop) {
   
     // width: 394px;
-  }
+  // }
 }
 
 .gallery-poster-text {
-  color: var(--button-activ-color);
+  // color: var(--button-activ-color);
   
-  @media screen and (min-width: $tablet) {
+  // @media screen and (min-width: $tablet) {
    
-  }
-  @media screen and (min-width: $desktop) {
+  // }
+  // @media screen and (min-width: $desktop) {
   
-  }
+  // }
 }
 
 .date-befor::before {
@@ -106,27 +87,27 @@ margin: 0 auto;
   margin-right: 4px;
   margin-left: 4px;
 
-  @media screen and (min-width: $desktop) {
-    height: 15px;
-    width: 2px;
-    margin-right: 6px;
-    margin-left: 6px;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   height: 15px;
+  //   width: 2px;
+  //   margin-right: 6px;
+  //   margin-left: 6px;
+  // }
 }
 
 .gallery-poster-description {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 280px;
-  margin-bottom: 4px;
-  @media screen and (min-width: $tablet) {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // width: 280px;
+  // margin-bottom: 4px;
+  // @media screen and (min-width: $tablet) {
     // width: 336px;
     // margin-bottom: 16px;
-  }
-  @media screen and (min-width: $desktop) {
+  // }
+  // @media screen and (min-width: $desktop) {
     // width: 394px;
-  }
+  // }
 }
 
 .film-rating-wrapper {
@@ -139,10 +120,10 @@ margin: 0 auto;
   border-radius: 5px;
   background-color: var(--button-activ-color);
 
-  @media screen and (min-width: $desktop) {
-    // width: auto;
-    // height: 20px;
-  }
+  // @media screen and (min-width: $desktop) {
+  //   width: auto;
+  //   height: 20px;
+  // }
 }
 
 

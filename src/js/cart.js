@@ -1,3 +1,4 @@
+
 // var d = document,
 //     itemBox = d.querySelectorAll('.item_box'), // блок каждого товара
 //     cartCont = d.getElementById('cart_content'); // блок вывода данных корзины
@@ -208,11 +209,6 @@
 //     itemBox = d.querySelectorAll('.item_box'), // блок каждого товара
 //     cartCont = d.getElementById('cart_content'); // блок вывода данных корзины
 // // Функция кроссбраузерной установка обработчика событий
-
-
-
-
-
 
 
 
