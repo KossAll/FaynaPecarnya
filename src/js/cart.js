@@ -1,6 +1,6 @@
-var d = document,
-    itemBox = d.querySelectorAll('.item_box'), // блок каждого товара
-    cartCont = d.getElementById('cart_content'); // блок вывода данных корзины
+
+    itemBox = document.querySelectorAll('.item_box'), // блок каждого товара
+    cartCont = document.getElementById('cart_content'); // блок вывода данных корзины
 // Функция кроссбраузерной установка обработчика событий
 function addEvent(elem, type, handler){
   if(elem.addEventListener){
@@ -22,8 +22,9 @@ function setCartData(o){
 // Добавляем товар в корзину
 function addToCart(e){
   this.disabled = true; // блокируем кнопку на время операции с корзиной
-  var cartData = getCartData() || {}, // получаем данные корзины или создаём новый объект, если данных еще нет
-      parentBox = this.parentNode, // родительский элемент кнопки "Добавить в корзину"
+  
+  const cartData = getCartData() || {}, // получаем данные корзины или создаём новый объект, если данных еще нет  
+    parentBox = this.parentNode, // родительский элемент кнопки "Добавить в корзину"
       itemId = this.getAttribute('data-id'), // ID товара
       itemTitle = parentBox.querySelector('.item_title').innerHTML, // название товара
       itemPrice = parentBox.querySelector('.item_price').innerHTML; // стоимость товара
@@ -38,16 +39,17 @@ function addToCart(e){
  return false;
 }
 // Устанавливаем обработчик события на каждую кнопку "Добавить в корзину"
-for(var i = 0; i < itemBox.length; i++){
+for(let i = 0; i < itemBox.length; i++){
   addEvent(itemBox[i].querySelector('.add_item'), 'click', addToCart);
 }
 // Открываем корзину со списком добавленных товаров
 function openCart(e){
-  var cartData = getCartData(), // вытаскиваем все данные корзины
-      totalItems = '';
+  const cartData = getCartData(),  // вытаскиваем все данные корзины
+    totalItems = '';
+  
   // если что-то в корзине уже есть, начинаем формировать данные для вывода
   if(cartData !== null){
-    totalItems = '<table class="shopping_list"><tr><th>Назва</th><th>Ціна</th><th>Кількість</th></tr>';
+    totalItems = '<div><table class="shopping_list"><tr><th>Назва</th><th>Ціна</th><th>Кількість</th></tr></div>';
     for(var items in cartData){
       totalItems += '<tr>';
       for(var i = 0; i < cartData[items].length; i++){
@@ -63,10 +65,10 @@ function openCart(e){
   }
   return false;
 }
-/* Открыть корзину */
-addEvent(d.getElementById('checkout'), 'click', openCart);
+// /* Открыть корзину */
+addEvent(document.getElementById('checkout'), 'click', openCart);
 /* Очистить корзину */
-addEvent(d.getElementById('clear_cart'), 'click', function(e){
+addEvent(document.getElementById('clear_cart'), 'click', function(e){
   localStorage.removeItem('cart');
   cartCont.innerHTML = 'Кошик пустий.';
 });
@@ -106,7 +108,7 @@ function sendOrderToEmail() {
 }
 
 /* Открыть корзину */
-addEvent(d.getElementById('checkout'), 'click', function(e){
+addEvent(document.getElementById('checkout'), 'click', function(e){
   openCart(e); // Открываем корзину со списком добавленных товаров
   sendOrderToEmail(); // Отправляем заказ на почту
 });
@@ -134,7 +136,7 @@ function addToCart(e) {
 }
 
 /* Открыть корзину */
-addEvent(d.getElementById('checkout'), 'click', openCart);
+addEvent(document.getElementById('checkout'), 'click', openCart);
 
 
 // Открываем корзину со списком добавленных товаров
