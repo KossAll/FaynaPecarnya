@@ -41,7 +41,7 @@
 
 
 
-const galleryCategory1 = [
+export const galleryCategory1 = [
   {
     image: "./images/section-business/піца 2.jpg",
     name:'Cлойка o',
@@ -114,7 +114,7 @@ function renderProducts(products) {
       <button class="button-shop">Додати в корзину</button>
     </div>
   `).join('');
-
+ 
   shopContainer.innerHTML = marcap;
 }
 
@@ -122,10 +122,11 @@ function handleSortChange(event) {
   const selectedValue = event.target.value;
 
   if (selectedValue === 'all') {
-    renderProducts(galleryCategory1);
+      renderProducts(galleryCategory1);
+     
   } else {
     const sortedProducts = galleryCategory1.filter(product => product.name === selectedValue);
-    renderProducts(sortedProducts);
+      renderProducts(sortedProducts);
   }
 }
 
@@ -133,9 +134,7 @@ sortingButtons.forEach(button => {
   button.addEventListener('change', handleSortChange);
 });
 
-// Initial render
-renderProducts(galleryCategory1);
-
+renderProducts(galleryCategory1)
 
 
 
