@@ -18,8 +18,13 @@
       cursor: pointer;
       margin: 0 auto;
       display: block;
+      margin-top: 5px;
+     
+      &:hover {
+          scale: 1.05;
+          filter: drop-shadow(0 8px 10px var(--green-background));
     }
-
+  }
 
 
 /* Add this CSS to your stylesheet */

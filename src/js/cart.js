@@ -325,9 +325,9 @@
     const addToCartButtons = document.querySelectorAll('.add_item');
     addToCartButtons.forEach(button => {
       button.addEventListener('click', function () {
-        const itemBox = button.closest('.item_box');
-        const itemName = itemBox.querySelector('.item_title').innerText;
-        const itemPrice = parseInt(itemBox.querySelector('.item_price').innerText);
+        const itemBox = button.closest('.gallery-product-box');
+        const itemName = itemBox.querySelector('.gallery-poster-title').innerText;
+        const itemPrice = parseInt(itemBox.querySelector('.gallery-poster-text').innerText);
         const itemId = parseInt(button.dataset.id);
 
         addToCart({ id: itemId, name: itemName, price: itemPrice });
