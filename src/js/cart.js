@@ -217,6 +217,36 @@
     const cartContent = document.getElementById('cart_content');
     const checkoutBtn = document.getElementById('checkout');
     const clearCartBtn = document.getElementById('clear_cart');
+  
+  document.addEventListener('click', function (event) {
+      const target = event.target;
+    
+      if (target.classList.contains('add_item')) {
+        const itemBox = target.closest('.gallery-product-box');
+        const itemName = itemBox.querySelector('.gallery-poster-title').innerText;
+        const itemPrice = parseInt(itemBox.querySelector('.gallery-poster-text').innerText);
+        const itemId = parseInt(target.dataset.id);
+    
+        const cartItems = getCartItems();
+        const existingItem = cartItems.find(item => item.id === itemId);
+    
+        if (existingItem) {
+          // Item already exists in the cart, increase the quantity by 1
+          existingItem.quantity +=1 ;
+        } else {
+          // Item does not exist in the cart, add it with quantity 1
+          const newItem = { id: itemId, name: itemName, price: itemPrice, quantity: 1 };
+          cartItems.push(newItem);
+        }
+
+   
+    
+        updateCart(cartItems);
+        renderCart();
+      }
+    })
+
+
 
     // функція, щоб отримати елементи кошика з локального зберігання
     function getCartItems() {
@@ -291,21 +321,7 @@
       cartContent.appendChild(totalBox);
     }
 
-    // функція для додавання елемента до кошика
-    function addToCart(item) {
-      const cartItems = getCartItems();
-      const existingItemIndex = cartItems.findIndex(i => i.id === item.id);
-      if (existingItemIndex !== -1) {
-        // Item already exists in the cart, update the quantity directly
-        cartItems[existingItemIndex].quantity += 0;
-      } else {
-        // Item does not exist in the cart, add it with quantity 1
-        item.quantity = 1;
-        cartItems.push(item);
-      }
-      updateCart(cartItems);
-      renderCart();
-    }
+
 
     // функція для очищення кошика
     function clearCart() {
@@ -321,18 +337,8 @@
       alert('Order has been sent to the email!');
     }
 
-    // Add event listeners for "до кошика" buttons
-    const addToCartButtons = document.querySelectorAll('.add_item');
-    addToCartButtons.forEach(button => {
-      button.addEventListener('click', function () {
-        const itemBox = button.closest('.gallery-product-box');
-        const itemName = itemBox.querySelector('.gallery-poster-title').innerText;
-        const itemPrice = parseInt(itemBox.querySelector('.gallery-poster-text').innerText);
-        const itemId = parseInt(button.dataset.id);
 
-        addToCart({ id: itemId, name: itemName, price: itemPrice });
-      });
-    });
+
 
     // Add event listener for "видалити" buttons
     const removeFromCartButtons = document.querySelectorAll('.away_item');
